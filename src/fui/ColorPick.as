@@ -57,8 +57,8 @@ package fui
 			var c:uint = bmd.getPixel(s1.mouseX, s1.mouseY);
 			for (var x:int = 0; x < bmd2.width;x++ ) {
 				for (var y:int = 0; y < bmd2.height;y++ ) {
-					var xc:uint =getCenColor( x / bmd2.width , 0,c);
-					var yc:uint = getCenColor(y / bmd2.height ,0, xc);
+					var xc:uint =getCenColor( x / bmd2.width , 0xffffff,c);
+					var yc:uint = getCenColor(y / bmd2.height , xc,0);
 					bmd2.setPixel(x,y, yc);
 				}
 			}
